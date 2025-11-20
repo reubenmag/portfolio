@@ -65,17 +65,18 @@ document.addEventListener("DOMContentLoaded", () => {
       projects_kicker: "// Projets",
       projects_title: "Une sélection de travaux",
 
+      // Projet 1 – Power BI
       proj1_tag: "Power BI · DataViz · Retail Analytics",
       proj1_title: "Projet Apple Retail – Tableau de Bord & Analyse",
       proj1_text:
-        "Création d’un tableau de bord interactif Power BI à partir d’un dataset Apple Retail : préparation des données, modélisation, calcul de KPI et design de plusieurs pages d’analyse.Projet accompagné d’un rapport écrit présentant les insights et recommandations.",
+        "Création d’un tableau de bord interactif Power BI à partir d’un dataset Apple Retail : préparation des données, modélisation, calcul de KPI et design de plusieurs pages d’analyse. Projet accompagné d’un rapport écrit présentant les insights et recommandations.",
       proj1_meta1: "Power BI · Data Modeling · DAX",
       proj1_meta2: "Note obtenue : 20/20",
       proj1_dashboard: "Voir le tableau de bord →",
       proj1_report: "Consulter le rapport →",
 
-
-      proj2_tag: "Pipeline ELT automatiséDATA ENGINEERING • PYTHON • POSTGRESQL",
+      // Projet 2 – Data Engineering
+      proj2_tag: "Data Engineering · Python · PostgreSQL",
       proj2_title: "Projet Data Engineering – Online Retail",
       proj2_text:
         "Construction d’un pipeline ELT complet : ingestion automatisée des données, stockage brut dans PostgreSQL, modélisation en étoile, transformations SQL, création des tables de dimensions/faits et documentation technique.",
@@ -83,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
       proj2_meta2: "Pipeline ELT automatisé",
       proj2_link: "Voir le projet →",
 
+      // Projet 3 – Dashboard articles
       proj3_tag: "Dashboard · DataViz",
       proj3_title: "Dashboard d’analyse d’articles",
       proj3_text:
@@ -96,9 +98,11 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_text:
         "Je suis à l’écoute d’opportunités d’alternance ou de stage alterné en data (Data Analyst, Data Scientist ou un rôle hybride entre les deux). N’hésite pas à me contacter pour en parler.",
       contact_info_title: "Infos",
+
       contact_label_email:
-        "<strong>Email :</strong> <a href='mailto:ton.email@example.com'>reubenmag6@gmail.com</a>",
-      contact_label_phone: "<strong>Téléphone :</strong> +33 6 15 40 95 15",
+        "<strong>Email :</strong> <a href='mailto:reubenmag6@gmail.com'>reubenmag6@gmail.com</a>",
+      contact_label_phone:
+        "<strong>Téléphone :</strong> +33 6 15 40 95 15",
       contact_label_linkedin:
         "<strong>LinkedIn :</strong> <a href='https://linkedin.com/in/ton-linkedin' target='_blank'>Profil</a>",
 
@@ -134,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
       skills_kicker: "// Skills",
       skills_title: "What I like to build",
       skills_text:
-        "From data exploration to model deployment: analysis, dashboards, predictive models and APIs to make them usable in real products.",
+        "From data exploration to model deployment: analyses, dashboards, predictive models and APIs to make them useful in real projects.",
       skills_backend_title: "Languages & Backend",
       skills_ml_title: "Data & Machine Learning",
       skills_mlop_title: "MLOps & Data Engineering",
@@ -154,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
       xp1_text:
         "Data exploitation and analysis, business intelligence, modelling with machine learning techniques and strong mathematical foundations applied to data.",
 
-      xp2_date: "Sep – Dec 2023",
+      xp2_date: "Sept – Dec 2023",
       xp2_title: "University of Abomey-Calavi · FASEG",
       xp2_text:
         "Started a degree in econometrics and applied statistics: foundations in econometrics, applied statistics, probability and quantitative tools for economic analysis.",
@@ -167,27 +171,31 @@ document.addEventListener("DOMContentLoaded", () => {
       xp4_date: "Since 2023",
       xp4_title: "Personal Projects · Data & AI",
       xp4_text:
-        "Hands-on work on real-world datasets: exploratory analysis, visualization, predictive models, NLP and automation via scripts and APIs.",
+        "Hands-on work on real-world datasets: exploratory analysis, visualization, predictive models, NLP and automation with scripts and APIs.",
 
       projects_kicker: "// Projects",
       projects_title: "Selected work",
 
-      proj1_tag: "NLP · BERT · FastAPI",
-      proj1_title: "Fake News Detection",
+      // Project 1 – Power BI
+      proj1_tag: "Power BI · DataViz · Retail Analytics",
+      proj1_title: "Apple Retail Project – Dashboard & Analysis",
       proj1_text:
-        "Trained several models (TF-IDF + Logistic Regression, dense network, fine-tuned BERT) to classify news articles as “fake” or “real”, and exposed the best model through a FastAPI service.",
-      proj1_meta1: "Python · PyTorch · HuggingFace",
-      proj1_meta2: "F1-score up to ~0.97",
-      proj1_link: "View code on GitHub →",
+        "Built an interactive Power BI dashboard from an Apple Retail dataset: data preparation, modelling, KPI calculation and multi-page analytical dashboards, along with a written report presenting insights and recommendations.",
+      proj1_meta1: "Power BI · Data Modeling · DAX",
+      proj1_meta2: "Grade obtained: 20/20",
+      proj1_dashboard: "View the dashboard →",
+      proj1_report: "Read the report →",
 
-      proj2_tag: "ELK · Monitoring",
-      proj2_title: "ELK Pipeline for Predictions",
+      // Project 2 – Data Engineering
+      proj2_tag: "Data Engineering · Python · PostgreSQL",
+      proj2_title: "Data Engineering Project – Online Retail",
       proj2_text:
-        "End-to-end pipeline to log classification API requests and responses to Elasticsearch, then visualize metrics in Kibana (fake rate, sources, response time, etc.).",
-      proj2_meta1: "FastAPI · Logstash · Elasticsearch · Kibana",
-      proj2_meta2: "Fully dockerized",
-      proj2_link: "View code on GitHub →",
+        "End-to-end ELT pipeline: automated data ingestion, raw storage in PostgreSQL, star-schema modelling, SQL transformations, dimension/fact tables and technical documentation.",
+      proj2_meta1: "Python · Pandas · SQLAlchemy · PostgreSQL",
+      proj2_meta2: "Automated ELT pipeline",
+      proj2_link: "View the project →",
 
+      // Project 3 – Dashboard articles
       proj3_tag: "Dashboard · DataViz",
       proj3_title: "Article Analysis Dashboard",
       proj3_text:
@@ -199,11 +207,13 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_kicker: "// Contact",
       contact_title: "Let’s talk about a project",
       contact_text:
-        "I’m looking for a work-study or alternating internship as a Data Analyst / Data Scientist. Feel free to reach out to discuss an opportunity or just chat about data and AI.",
+        "I’m looking for a work-study or alternating internship as a Data Analyst / Data Scientist or a hybrid role between both. Feel free to reach out to discuss an opportunity.",
       contact_info_title: "Info",
+
       contact_label_email:
-        "<strong>Email:</strong> <a href='mailto:ton.email@example.com'>ton.email@example.com</a>",
-      contact_label_phone: "<strong>Phone:</strong> +33 X XX XX XX XX",
+        "<strong>Email:</strong> <a href='mailto:reubenmag6@gmail.com'>reubenmag6@gmail.com</a>",
+      contact_label_phone:
+        "<strong>Phone:</strong> +33 6 15 40 95 15",
       contact_label_linkedin:
         "<strong>LinkedIn:</strong> <a href='https://linkedin.com/in/ton-linkedin' target='_blank'>Profile</a>",
 
@@ -218,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   /* =========================
-     APPLICATION DES TRADUCTIONS
+     APPLIQUER LES TRADUCTIONS
   ========================== */
 
   let currentLang = localStorage.getItem("lang") || "fr";
@@ -261,7 +271,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* =========================
      THEME SWITCH
-     - Dark = défaut (pas de classe)
+     - Dark = défaut
      - Light = body.light
   ========================== */
 
@@ -272,10 +282,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (storedTheme === "light") {
     body.classList.add("light");
-    if (themeToggle) themeToggle.textContent = "🌙"; // on propose de repasser en sombre
+    if (themeToggle) themeToggle.textContent = "🌙";
   } else {
     body.classList.remove("light");
-    if (themeToggle) themeToggle.textContent = "☀️"; // on propose d'aller vers le clair
+    if (themeToggle) themeToggle.textContent = "☀️";
   }
 
   if (themeToggle) {
@@ -295,6 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* =========================
      NAV MOBILE
   ========================== */
+
   const navToggle = document.getElementById("navToggle");
   const navLinks = document.querySelector(".nav-links");
 
