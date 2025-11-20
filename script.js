@@ -75,13 +75,13 @@ document.addEventListener("DOMContentLoaded", () => {
       proj1_report: "Consulter le rapport →",
 
 
-      proj2_tag: "ELK · Monitoring",
-      proj2_title: "Pipeline ELK pour les prédictions",
+      proj2_tag: "Pipeline ELT automatiséDATA ENGINEERING • PYTHON • POSTGRESQL",
+      proj2_title: "Projet Data Engineering – Online Retail",
       proj2_text:
-        "Pipeline complet pour journaliser les requêtes et réponses de l’API de classification dans Elasticsearch, puis créer des dashboards dans Kibana (taux de fake, sources, temps de réponse…).",
-      proj2_meta1: "FastAPI · Logstash · Elasticsearch · Kibana",
-      proj2_meta2: "Dockerisé de bout en bout",
-      proj2_link: "Code sur GitHub →",
+        "Construction d’un pipeline ELT complet : ingestion automatisée des données, stockage brut dans PostgreSQL, modélisation en étoile, transformations SQL, création des tables de dimensions/faits et documentation technique.",
+      proj2_meta1: "Python · Pandas · SQLAlchemy · PostgreSQL",
+      proj2_meta2: "Pipeline ELT automatisé",
+      proj2_link: "Voir le projet →",
 
       proj3_tag: "Dashboard · DataViz",
       proj3_title: "Dashboard d’analyse d’articles",
