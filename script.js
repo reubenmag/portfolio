@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* =========================
-     TRADUCTIONS FR / EN
-  ========================== */
-
   const translations = {
     fr: {
       nav_home: "Accueil",
@@ -65,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
       projects_kicker: "// Projets",
       projects_title: "Une sélection de travaux",
 
-      // Projet 1 – Power BI
       proj1_tag: "Power BI · DataViz · Retail Analytics",
       proj1_title: "Projet Apple Retail – Tableau de Bord & Analyse",
       proj1_text:
@@ -75,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
       proj1_dashboard: "Voir le tableau de bord →",
       proj1_report: "Consulter le rapport →",
 
-      // Projet 2 – Data Engineering
       proj2_tag: "Data Engineering · Python · PostgreSQL",
       proj2_title: "Projet Data Engineering – Online Retail",
       proj2_text:
@@ -84,14 +78,13 @@ document.addEventListener("DOMContentLoaded", () => {
       proj2_meta2: "Pipeline ELT automatisé",
       proj2_link: "Voir le projet →",
 
-      // Projet 3 – Dashboard articles
-      proj3_tag: "Dashboard · DataViz",
-      proj3_title: "Dashboard d’analyse d’articles",
+      proj3_tag: "MACHINE LEARNING · IA CONVERSATIONNELLE · AUDIO",
+      proj3_title: "Assistant Vocal IA – STT · LLM · TTS",
       proj3_text:
-        "Interface de visualisation permettant d’explorer les résultats du modèle : répartition des classes, sources, temps d’inférence, performance dans le temps, etc.",
-      proj3_meta1: "Python · Visualisation",
-      proj3_meta2: "Orienté prise de décision",
-      proj3_link: "Demo / screenshots →",
+        "Développement d’un assistant vocal IA intégrant la reconnaissance vocale, le raisonnement par LLM et la synthèse vocale en continu. Mise en place d’une architecture modulaire, orientée temps réel, avec gestion du streaming, des réponses audio progressives et de l’état conversationnel.",
+      proj3_meta1: "Python · LLM (Groq) · Whisper",
+      proj3_meta2: "Text-to-Speech · Streamlit",
+      proj3_link: "Voir le projet →",
 
       contact_kicker: "// Me contacter",
       contact_title: "On discute d’un projet ?",
@@ -176,7 +169,6 @@ document.addEventListener("DOMContentLoaded", () => {
       projects_kicker: "// Projects",
       projects_title: "Selected work",
 
-      // Project 1 – Power BI
       proj1_tag: "Power BI · DataViz · Retail Analytics",
       proj1_title: "Apple Retail Project – Dashboard & Analysis",
       proj1_text:
@@ -186,7 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
       proj1_dashboard: "View the dashboard →",
       proj1_report: "Read the report →",
 
-      // Project 2 – Data Engineering
       proj2_tag: "Data Engineering · Python · PostgreSQL",
       proj2_title: "Data Engineering Project – Online Retail",
       proj2_text:
@@ -195,14 +186,13 @@ document.addEventListener("DOMContentLoaded", () => {
       proj2_meta2: "Automated ELT pipeline",
       proj2_link: "View the project →",
 
-      // Project 3 – Dashboard articles
-      proj3_tag: "Dashboard · DataViz",
-      proj3_title: "Article Analysis Dashboard",
+      proj3_tag: "MACHINE LEARNING · CONVERSATIONAL AI · AUDIO",
+      proj3_title: "Voice AI Assistant – STT · LLM · TTS",
       proj3_text:
-        "Visualization interface to explore model outputs: class distribution, sources, inference time, performance over time, and more.",
-      proj3_meta1: "Python · Visualization",
-      proj3_meta2: "Decision-oriented",
-      proj3_link: "Demo / screenshots →",
+        "Built a real-time voice AI assistant combining speech-to-text, LLM reasoning and continuous text-to-speech. Modular architecture with streaming, progressive audio responses and conversation state management.",
+      proj3_meta1: "Python · LLM (Groq) · Whisper",
+      proj3_meta2: "Text-to-Speech · Streamlit",
+      proj3_link: "View the project →",
 
       contact_kicker: "// Contact",
       contact_title: "Let’s talk about a project",
@@ -227,10 +217,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  /* =========================
-     APPLIQUER LES TRADUCTIONS
-  ========================== */
-
   let currentLang = localStorage.getItem("lang") || "fr";
   const langToggle = document.getElementById("langToggle");
 
@@ -238,17 +224,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.dataset.i18n;
       const value = translations[currentLang][key];
-      if (value !== undefined) {
-        el.innerHTML = value;
-      }
+      if (value !== undefined) el.innerHTML = value;
     });
 
     document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
       const key = el.dataset.i18nPlaceholder;
       const value = translations[currentLang][key];
-      if (value !== undefined) {
-        el.placeholder = value;
-      }
+      if (value !== undefined) el.placeholder = value;
     });
   }
 
@@ -268,12 +250,6 @@ document.addEventListener("DOMContentLoaded", () => {
       updateLangToggleLabel();
     });
   }
-
-  /* =========================
-     THEME SWITCH
-     - Dark = défaut
-     - Light = body.light
-  ========================== */
 
   const themeToggle = document.getElementById("themeToggle");
   const body = document.body;
@@ -302,22 +278,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================
-     NAV MOBILE
-  ========================== */
-
   const navToggle = document.getElementById("navToggle");
   const navLinks = document.querySelector(".nav-links");
 
   if (navToggle && navLinks) {
-    navToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
-    });
+    navToggle.addEventListener("click", () => navLinks.classList.toggle("open"));
 
     navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-      });
+      link.addEventListener("click", () => navLinks.classList.remove("open"));
     });
   }
 });
