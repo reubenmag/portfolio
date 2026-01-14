@@ -67,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "Création d’un tableau de bord interactif Power BI à partir d’un dataset Apple Retail : préparation des données, modélisation, calcul de KPI et design de plusieurs pages d’analyse. Projet accompagné d’un rapport écrit présentant les insights et recommandations.",
       proj1_meta1: "Power BI · Data Modeling · DAX",
       proj1_meta2: "Note obtenue : 20/20",
-      proj1_dashboard: "Voir le tableau de bord →",
       proj1_report: "Consulter le rapport →",
 
       proj2_tag: "Data Engineering · Python · PostgreSQL",
@@ -175,7 +174,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "Built an interactive Power BI dashboard from an Apple Retail dataset: data preparation, modelling, KPI calculation and multi-page analytical dashboards, along with a written report presenting insights and recommendations.",
       proj1_meta1: "Power BI · Data Modeling · DAX",
       proj1_meta2: "Grade obtained: 20/20",
-      proj1_dashboard: "View the dashboard →",
       proj1_report: "Read the report →",
 
       proj2_tag: "Data Engineering · Python · PostgreSQL",
