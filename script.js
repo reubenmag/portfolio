@@ -58,6 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
       xp4_text:
         "Mise en pratique sur des jeux de données réels : analyses exploratoires, visualisation, modèles prédictifs, NLP et automatisation via scripts et APIs.",
 
+
+      xp5_date: "Novembre-Décembre 2025",
+      xp5_title: "Stage Data Analyst – Arkose",
+      xp5_text:
+        "Création d’un dashboard de suivi des performances commerciales : collecte et préparation des données, calcul de KPI, design de visualisations et présentation des insights à l’équipe. Utilisation de Power BI pour la construction du dashboard et SQL pour les transformations de données.",
+
+
+        
       projects_kicker: "// Projets",
       projects_title: "Une sélection de travaux",
 
@@ -164,6 +172,12 @@ document.addEventListener("DOMContentLoaded", () => {
       xp4_title: "Personal Projects · Data & AI",
       xp4_text:
         "Hands-on work on real-world datasets: exploratory analysis, visualization, predictive models, NLP and automation with scripts and APIs.",
+
+
+      xp5_date: "November-December 2025",
+      xp5_title: "Data Analyst Intern – Arkose",
+      xp5_text:
+        "Built a dashboard to track commercial performance: data collection and preparation, KPI calculation, visualization design and presentation of insights to the team. Used Power BI for dashboard construction and SQL for data transformations.",
 
       projects_kicker: "// Projects",
       projects_title: "Selected work",
