@@ -318,29 +318,51 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeToggle = document.getElementById("themeToggle");
   const body = document.body;
 
-  const storedTheme = localStorage.getItem("theme");
-
-  if (storedTheme === "light") {
-    body.classList.add("light");
-    if (themeToggle) themeToggle.textContent = "🌙";
-  } else {
-    body.classList.remove("light");
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
     if (themeToggle) themeToggle.textContent = "☀️";
+  } else {
+    body.classList.remove("dark");
+    if (themeToggle) themeToggle.textContent = "🌙";
   }
 
   if (themeToggle) {
     themeToggle.addEventListener("click", () => {
-      body.classList.toggle("light");
-
-      if (body.classList.contains("light")) {
-        themeToggle.textContent = "🌙";
-        localStorage.setItem("theme", "light");
-      } else {
-        themeToggle.textContent = "☀️";
-        localStorage.setItem("theme", "dark");
-      }
+      body.classList.toggle("dark");
+      const isDark = body.classList.contains("dark");
+      themeToggle.textContent = isDark ? "☀️" : "🌙";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
     });
   }
+
+  // 3D card tilt
+  if (!window.matchMedia("(hover: none)").matches) {
+    document.querySelectorAll(".project-card").forEach(card => {
+      card.addEventListener("mousemove", e => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top)  / r.height - 0.5;
+        card.style.transition = "transform 0.08s ease";
+        card.style.transform  = `perspective(800px) rotateY(${x * 12}deg) rotateX(${-y * 10}deg) translateZ(8px)`;
+      });
+      card.addEventListener("mouseleave", () => {
+        card.style.transition = "transform 0.55s cubic-bezier(0.22,1,0.36,1)";
+        card.style.transform  = "";
+      });
+    });
+  }
+
+  // Scroll reveal
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        revealObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+
+  document.querySelectorAll(".reveal").forEach(el => revealObs.observe(el));
 
   const navToggle = document.getElementById("navToggle");
   const navLinks = document.querySelector(".nav-links");

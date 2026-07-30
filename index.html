@@ -9,42 +9,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="dark">
+<body>
   <div class="bg-grid"></div>
 
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="nav-logo">
-  <a href="#" class="logo-link">
-    <span class="logo-mark">SM</span>
-    <span class="logo-text">SINHOU Magnus</span>
-  </a>
-</div>
-
+      <a href="#" class="logo-link">
+        <span class="logo-mark">SM</span>
+        <span class="logo-text">SINHOU Magnus</span>
+      </a>
+    </div>
 
     <nav class="nav-links">
-      <a href="#hero" data-i18n="nav_home">Accueil</a>
-      <a href="#skills" data-i18n="nav_skills">Compétences</a>
+      <a href="#hero"       data-i18n="nav_home">Accueil</a>
+      <a href="#skills"     data-i18n="nav_skills">Compétences</a>
       <a href="#experience" data-i18n="nav_experience">Parcours</a>
-      <a href="#projects" data-i18n="nav_projects">Projets</a>
-      <a href="#contact" data-i18n="nav_contact">Contact</a>
+      <a href="#projects"   data-i18n="nav_projects">Projets</a>
+      <a href="#contact"    data-i18n="nav_contact">Contact</a>
     </nav>
 
     <div class="nav-cta">
-      <button id="langToggle" class="theme-toggle">EN</button>
-      <button id="themeToggle" class="theme-toggle">☀️</button>
-      <button class="nav-toggle" id="navToggle">☰</button>
+      <button id="langToggle"  class="theme-toggle">EN</button>
+      <button id="themeToggle" class="theme-toggle">🌙</button>
+      <button id="navToggle"   class="nav-toggle">☰</button>
     </div>
   </header>
 
   <main>
     <!-- HERO -->
-    <section id="hero" class="hero section">
+    <section id="hero" class="hero">
       <div class="hero-content">
         <p class="hero-kicker" data-i18n="hero_kicker">// Portfolio</p>
 
         <h1 class="hero-title" data-i18n="hero_nom_title">
-          Salut, moi c’est <span class="accent">SINHOU Magnus</span>
+          Salut, moi c'est <span class="accent">SINHOU Magnus</span>
         </h1>
 
         <h2 class="hero-subtitle" data-i18n="hero_subtitle">
@@ -53,46 +52,30 @@
 
         <p class="hero-text" data-i18n="hero_text">
           Je conçois des analyses de données, des modèles de machine learning et des APIs
-          pour transformer l’information brute en insights actionnables. J’aime autant
+          pour transformer l'information brute en insights actionnables. J'aime autant
           explorer et visualiser les données que mettre en production des modèles
           et les suivre dans le temps.
         </p>
 
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_projects">
-            Voir mes projets
-          </a>
-          <a href="#contact" class="btn btn-ghost" data-i18n="hero_btn_contact">
-            Me contacter
-          </a>
+          <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_projects">Voir mes projets</a>
+          <a href="#contact"  class="btn btn-ghost"   data-i18n="hero_btn_contact">Me contacter</a>
         </div>
 
         <div class="hero-cv">
           <a href="src/cv/CV-Sinhou-Magnus-Data-Analyst.pdf"
-             download
-             target="_blank"
-             rel="noopener"
+             download target="_blank" rel="noopener"
              class="btn btn-ghost btn-cv"
-             data-i18n="hero_btn_cv_analyst">
-            ↓ CV Data Analyst
-          </a>
+             data-i18n="hero_btn_cv_analyst">↓ CV Data Analyst</a>
           <a href="src/cv/CV-Sinhou-Magnus-Data-Scientist.pdf"
-             download
-             target="_blank"
-             rel="noopener"
+             download target="_blank" rel="noopener"
              class="btn btn-ghost btn-cv"
-             data-i18n="hero_btn_cv_scientist">
-            ↓ CV Data Scientist
-          </a>
+             data-i18n="hero_btn_cv_scientist">↓ CV Data Scientist</a>
         </div>
 
         <div class="hero-meta">
-          <span data-i18n="hero_meta_location">
-            Basé en : <strong>Île-de-France</strong>
-          </span>
-          <span data-i18n="hero_meta_availability">
-            À la recherche d’une <strong>alternance ou d’un stage alterné</strong> en data.
-          </span>
+          <span data-i18n="hero_meta_location">Basé en : <strong>Île-de-France</strong></span>
+          <span data-i18n="hero_meta_availability">À la recherche d'une <strong>alternance ou d'un stage alterné</strong> en data.</span>
         </div>
 
         <div class="hero-socials">
@@ -103,14 +86,12 @@
       </div>
 
       <div class="hero-photo-wrapper">
-        <div class="hero-photo-ring"></div>
-        <!-- Mets ta vraie photo ici -->
-        <img src="src/SINHOU Magnus 2.jpg" alt="Photo de profil" class="hero-photo" />
-
+        <div class="hero-photo-ring">
+          <img src="src/SINHOU Magnus 2.jpg" alt="Photo de profil" class="hero-photo" />
+        </div>
         <div class="hero-badge hero-badge-top" data-i18n="hero_badge_top">
           <span class="dot"></span> Data & Machine Learning
         </div>
-
         <div class="hero-badge hero-badge-bottom" data-i18n="hero_badge_bottom">
           Data Analyst &<br/>Data Scientist
         </div>
@@ -119,17 +100,17 @@
 
     <!-- COMPETENCES -->
     <section id="skills" class="section">
-      <div class="section-header">
+      <div class="section-header reveal">
         <p class="section-kicker" data-i18n="skills_kicker">// Mes compétences</p>
-        <h2 class="section-title" data-i18n="skills_title">Ce que j’aime construire</h2>
+        <h2 class="section-title" data-i18n="skills_title">Ce que j'aime construire</h2>
         <p class="section-text" data-i18n="skills_text">
-          De l’exploration des données à la mise en production de modèles :
+          De l'exploration des données à la mise en production de modèles :
           analyses, dashboards, modèles prédictifs et APIs pour les exploiter concrètement.
         </p>
       </div>
 
       <div class="skills-grid">
-        <div class="skills-column">
+        <div class="skills-column reveal reveal-d1">
           <h3 class="skills-title" data-i18n="skills_backend_title">Langages & Backend</h3>
           <ul class="chip-list">
             <li class="chip">Python</li>
@@ -138,8 +119,7 @@
             <li class="chip">Bash</li>
           </ul>
         </div>
-
-        <div class="skills-column">
+        <div class="skills-column reveal reveal-d2">
           <h3 class="skills-title" data-i18n="skills_ml_title">Data & Machine Learning</h3>
           <ul class="chip-list">
             <li class="chip">Pandas</li>
@@ -150,8 +130,7 @@
             <li class="chip">BERT</li>
           </ul>
         </div>
-
-        <div class="skills-column">
+        <div class="skills-column reveal reveal-d3">
           <h3 class="skills-title" data-i18n="skills_mlop_title">MLOps & Data Engineering</h3>
           <ul class="chip-list">
             <li class="chip">Docker</li>
@@ -160,8 +139,7 @@
             <li class="chip">Monitoring</li>
           </ul>
         </div>
-
-        <div class="skills-column">
+        <div class="skills-column reveal reveal-d1">
           <h3 class="skills-title" data-i18n="skills_soft_title">Soft skills</h3>
           <ul class="chip-list">
             <li class="chip" data-i18n="skills_soft1">Esprit analytique</li>
@@ -170,8 +148,7 @@
             <li class="chip" data-i18n="skills_soft4">Pédagogie</li>
           </ul>
         </div>
-
-        <div class="skills-column">
+        <div class="skills-column reveal reveal-d2">
           <h3 class="skills-title" data-i18n="skills_Outils_title">Outils</h3>
           <ul class="chip-list">
             <li class="chip">Power BI</li>
@@ -181,8 +158,7 @@
             <li class="chip">Figma</li>
           </ul>
         </div>
-
-        <div class="skills-column">
+        <div class="skills-column reveal reveal-d3">
           <h3 class="skills-title" data-i18n="skills_Base_title">Bases de données</h3>
           <ul class="chip-list">
             <li class="chip">MySQL</li>
@@ -190,254 +166,179 @@
             <li class="chip">MongoDB</li>
           </ul>
         </div>
-
       </div>
     </section>
 
     <!-- PARCOURS -->
     <section id="experience" class="section">
-      <div class="section-header">
+      <div class="section-header reveal">
         <p class="section-kicker" data-i18n="xp_kicker">// Mon parcours</p>
         <h2 class="section-title" data-i18n="xp_title">Études & expériences</h2>
       </div>
 
       <div class="timeline">
-
-        <!-- Études supérieures : Bachelor -->
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <span class="timeline-date" data-i18n="xp1_date">2024 – 2026</span>
-            <h3 class="timeline-title" data-i18n="xp1_title">
-              HETIC Montreuil · Bachelor Data & Intelligence Artificielle
-            </h3>
-            <p class="timeline-text" data-i18n="xp1_text">
-              Exploitation et analyse des données, business intelligence,
-              modélisation avec techniques de machine learning et maîtrise
-              d’outils mathématiques appliqués à la data.
-            </p>
+            <h3 class="timeline-title" data-i18n="xp1_title">HETIC Montreuil · Bachelor Data & Intelligence Artificielle</h3>
+            <p class="timeline-text" data-i18n="xp1_text">Exploitation et analyse des données, business intelligence, modélisation avec techniques de machine learning et maîtrise d'outils mathématiques appliqués à la data.</p>
           </div>
         </div>
 
-        <!-- Licence en économétrie & statistiques appliquées -->
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <span class="timeline-date" data-i18n="xp2_date">Sept. – Déc. 2023</span>
-            <h3 class="timeline-title" data-i18n="xp2_title">
-              Université d’Abomey-Calavi · FASEG
-            </h3>
-            <p class="timeline-text" data-i18n="xp2_text">
-              Début de licence en économétrie et statistiques appliquées :
-              bases de l’économétrie, statistiques appliquées, probabilités
-              et outils quantitatifs pour l’analyse économique.
-            </p>
+            <h3 class="timeline-title" data-i18n="xp2_title">Université d'Abomey-Calavi · FASEG</h3>
+            <p class="timeline-text" data-i18n="xp2_text">Début de licence en économétrie et statistiques appliquées : bases de l'économétrie, statistiques appliquées, probabilités et outils quantitatifs pour l'analyse économique.</p>
           </div>
         </div>
 
-        <!-- Bac -->
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <span class="timeline-date" data-i18n="xp3_date">2022 – 2023</span>
-            <h3 class="timeline-title" data-i18n="xp3_title">
-              CSJM Le Faucon · Abomey-Calavi, Bénin
-            </h3>
-            <p class="timeline-text" data-i18n="xp3_text">
-              Baccalauréat série D (scientifique), spécialisation en
-              mathématiques et physique.
-            </p>
+            <h3 class="timeline-title" data-i18n="xp3_title">CSJM Le Faucon · Abomey-Calavi, Bénin</h3>
+            <p class="timeline-text" data-i18n="xp3_text">Baccalauréat série D (scientifique), spécialisation en mathématiques et physique.</p>
           </div>
         </div>
 
-        <!-- Projets personnels -->
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <span class="timeline-date" data-i18n="xp4_date">Depuis 2023</span>
             <h3 class="timeline-title" data-i18n="xp4_title">Projets personnels · Data & IA</h3>
-            <p class="timeline-text" data-i18n="xp4_text">
-              Mise en pratique sur des jeux de données réels : analyses exploratoires,
-              visualisation, modèles prédictifs, NLP et automatisation via scripts et APIs.
-            </p>
+            <p class="timeline-text" data-i18n="xp4_text">Mise en pratique sur des jeux de données réels : analyses exploratoires, visualisation, modèles prédictifs, NLP et automatisation via scripts et APIs.</p>
           </div>
         </div>
 
-        <!-- Expérience professionnel -->
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <span class="timeline-date" data-i18n="xp5_date">Novembre-Décembre 2025</span>
             <h3 class="timeline-title" data-i18n="xp5_title">Stage Data Analyst – Arkose</h3>
-            <p class="timeline-text" data-i18n="xp5_text">
-              Création d’un dashboard de suivi des performances commerciales : collecte et préparation des données, calcul de KPI, design de visualisations et présentation des insights à l’équipe. Utilisation de Power BI pour la construction du dashboard et SQL pour les transformations de données.
-            </p>
+            <p class="timeline-text" data-i18n="xp5_text">Création d'un dashboard de suivi des performances commerciales : collecte et préparation des données, calcul de KPI, design de visualisations et présentation des insights à l'équipe. Utilisation de Power BI pour la construction du dashboard et SQL pour les transformations de données.</p>
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- PROJETS -->
     <section id="projects" class="section">
-      <div class="section-header">
+      <div class="section-header reveal">
         <p class="section-kicker" data-i18n="projects_kicker">// Projets</p>
         <h2 class="section-title" data-i18n="projects_title">Une sélection de travaux</h2>
       </div>
 
       <div class="projects-grid">
-        <!-- Projet 1 -->
-        <article class="project-card">
+
+        <article class="project-card reveal">
           <div class="project-cover">
-    <img src="src\Capture d'écran 2025-12-17 175443.png" alt="Dashboard Power BI Apple Retail">
-  </div>
-  <div class="project-tag" data-i18n="proj1_tag">Power BI · DataViz · Retail Analytics</div>
-
-  <h3 class="project-title" data-i18n="proj1_title">
-    Projet Apple Retail – Tableau de Bord & Analyse
-  </h3>
-
-  <p class="project-text" data-i18n="proj1_text">
-    Création d’un tableau de bord interactif Power BI à partir d’un dataset Apple Retail :
-    préparation des données, modélisation, calcul de KPI et design de plusieurs pages d’analyse.
-    Projet accompagné d’un rapport écrit présentant les insights et recommandations.
-  </p>
-
-  <ul class="project-meta">
-    <li data-i18n="proj1_meta1">Power BI · Data Modeling · DAX</li>
-    <li data-i18n="proj1_meta2">Note obtenue : 20/20</li>
-  </ul>
-
-  <!-- VERSION AVEC 2 BOUTONS -->
-  <div class="project-actions" style="display: flex; flex-direction: column; gap: 6px;">
-
-    <a href=" https://app.powerbi.com/groups/me/reports/caa13c97-cb84-4d7e-850f-5d9147ecb8d1/90d77f6633371281d574?experience=power-bi"
-       target="_blank"
-       class="btn-link"
-       data-i18n="proj1_report">
-      Consulter le rapport →
-    </a>
-
-  </div>
-</article>
-
-
-        <!-- Projet 2 -->
-        <article class="project-card">
-           <div class="project-cover">
-          <img src="src\pipeline_elt.png" alt="Dashboard Power BI Apple Retail">
+            <img src="src/Capture d'écran 2025-12-17 175443.png" alt="Dashboard Power BI Apple Retail">
+            <div class="project-tag" data-i18n="proj1_tag">Power BI · DataViz · Retail Analytics</div>
           </div>
-          <div class="project-tag" data-i18n="proj2_tag">DATA ENGINEERING • PYTHON • POSTGRESQL</div>
-          <h3 class="project-title" data-i18n="proj2_title">Projet Data Engineering – Online Retail</h3>
-          <p class="project-text" data-i18n="proj2_text">
-            Construction d’un pipeline ELT complet : ingestion automatisée des données, stockage brut dans PostgreSQL, modélisation en étoile, transformations SQL, création des tables de dimensions/faits et documentation technique.
-          </p>
-          <ul class="project-meta">
-            <li data-i18n="proj2_meta1">Python · Pandas · SQLAlchemy · PostgreSQL</li>
-            <li data-i18n="proj2_meta2">Pipeline ELT automatisé</li>
-          </ul>
-          <div class="project-actions">
-            <a href="https://github.com/reubenmag/projet-elt-data-eng"
-               target="_blank"
-               class="btn-link"
-               data-i18n="proj2_link">
-              Voir le projet →
-            </a>
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj1_title">Projet Apple Retail – Tableau de Bord & Analyse</h3>
+            <p class="project-text" data-i18n="proj1_text">Création d'un tableau de bord interactif Power BI à partir d'un dataset Apple Retail : préparation des données, modélisation, calcul de KPI et design de plusieurs pages d'analyse. Projet accompagné d'un rapport écrit présentant les insights et recommandations.</p>
+            <ul class="project-meta">
+              <li data-i18n="proj1_meta1">Power BI · Data Modeling · DAX</li>
+              <li data-i18n="proj1_meta2">Note obtenue : 20/20</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://app.powerbi.com/groups/me/reports/caa13c97-cb84-4d7e-850f-5d9147ecb8d1/90d77f6633371281d574?experience=power-bi"
+                 target="_blank" class="btn-link" data-i18n="proj1_report">Consulter le rapport →</a>
+            </div>
           </div>
         </article>
 
-        <!-- Projet 3 -->
-        <article class="project-card">
+        <article class="project-card reveal reveal-d1">
           <div class="project-cover">
-          <img src="src\image.png" alt="Dashboard Power BI Apple Retail">
+            <img src="src/pipeline_elt.png" alt="Pipeline ELT Data Engineering">
+            <div class="project-tag" data-i18n="proj2_tag">DATA ENGINEERING • PYTHON • POSTGRESQL</div>
           </div>
-          <div class="project-tag" data-i18n="proj3_tag">ARTIFICIAL INTELLIGENCE · PYTHON · STREAMING AUDIO</div>
-          <h3 class="project-title" data-i18n="proj3_title">Dashboard d’analyse d’articles</h3>
-          <p class="project-text" data-i18n="proj3_text">
-            Interface de visualisation permettant d’explorer les résultats du
-            modèle : répartition des classes, sources, temps d’inférence,
-            performance dans le temps, etc.
-          </p>
-          <ul class="project-meta">
-            <li data-i18n="proj3_meta1">Python · LLM (Groq) · Whisper</li>
-            <li data-i18n="proj3_meta2">Text-to-Speech · Streamlit</li>
-          </ul>
-          <div class="project-actions">
-            <a href="https://github.com/BrownGreg/DIA3_Jarvis" class="btn-link" data-i18n="proj3_link">
-              Demo / screenshots →
-            </a>
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj2_title">Projet Data Engineering – Online Retail</h3>
+            <p class="project-text" data-i18n="proj2_text">Construction d'un pipeline ELT complet : ingestion automatisée des données, stockage brut dans PostgreSQL, modélisation en étoile, transformations SQL, création des tables de dimensions/faits et documentation technique.</p>
+            <ul class="project-meta">
+              <li data-i18n="proj2_meta1">Python · Pandas · SQLAlchemy · PostgreSQL</li>
+              <li data-i18n="proj2_meta2">Pipeline ELT automatisé</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/reubenmag/projet-elt-data-eng" target="_blank" class="btn-link" data-i18n="proj2_link">Voir le projet →</a>
+            </div>
           </div>
         </article>
 
-        <!-- Projet 4 -->
-        <article class="project-card">
+        <article class="project-card reveal reveal-d2">
+          <div class="project-cover">
+            <img src="src/image.png" alt="Assistant Vocal IA">
+            <div class="project-tag" data-i18n="proj3_tag">ARTIFICIAL INTELLIGENCE · PYTHON · STREAMING AUDIO</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj3_title">Dashboard d'analyse d'articles</h3>
+            <p class="project-text" data-i18n="proj3_text">Interface de visualisation permettant d'explorer les résultats du modèle : répartition des classes, sources, temps d'inférence, performance dans le temps, etc.</p>
+            <ul class="project-meta">
+              <li data-i18n="proj3_meta1">Python · LLM (Groq) · Whisper</li>
+              <li data-i18n="proj3_meta2">Text-to-Speech · Streamlit</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/BrownGreg/DIA3_Jarvis" target="_blank" class="btn-link" data-i18n="proj3_link">Demo / screenshots →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-d3">
           <div class="project-cover">
             <img src="src/placeholder_forensic.svg" alt="Analyse forensique financiere">
+            <div class="project-tag" data-i18n="proj4_tag">DATA SCIENCE · MACHINE LEARNING · PYTHON</div>
           </div>
-          <div class="project-tag" data-i18n="proj4_tag">DATA SCIENCE · MACHINE LEARNING · PYTHON</div>
-          <h3 class="project-title" data-i18n="proj4_title">Analyse forensique financiere - detection de fraude</h3>
-          <p class="project-text" data-i18n="proj4_text">
-            Investigation de donnees bancaires pour identifier des virements offshore frauduleux et des comportements anormaux sur 2 500 transactions et 1 000 documents. Tests statistiques inferentiels, ML supervise et non supervise, et extraction d'informations via API LLM.
-          </p>
-          <ul class="project-meta">
-            <li data-i18n="proj4_meta1">Python · scikit-learn · pandas · NumPy · API Anthropic</li>
-            <li data-i18n="proj4_meta2">Random Forest · PCA · K-Means · KNN · Shapiro-Wilk · ANOVA</li>
-          </ul>
-          <div class="project-actions">
-            <a href="https://github.com/reubenmag/Enqu-te"
-               target="_blank"
-               class="btn-link"
-               data-i18n="proj4_link">
-              Voir le projet →
-            </a>
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj4_title">Analyse forensique financiere - detection de fraude</h3>
+            <p class="project-text" data-i18n="proj4_text">Investigation de donnees bancaires pour identifier des virements offshore frauduleux et des comportements anormaux sur 2 500 transactions et 1 000 documents. Tests statistiques inferentiels, ML supervise et non supervise, et extraction d'informations via API LLM.</p>
+            <ul class="project-meta">
+              <li data-i18n="proj4_meta1">Python · scikit-learn · pandas · NumPy · API Anthropic</li>
+              <li data-i18n="proj4_meta2">Random Forest · PCA · K-Means · KNN</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/reubenmag/Enqu-te" target="_blank" class="btn-link" data-i18n="proj4_link">Voir le projet →</a>
+            </div>
           </div>
         </article>
 
-        <!-- Projet 5 -->
-        <article class="project-card">
+        <article class="project-card reveal reveal-d1">
           <div class="project-cover">
             <img src="src/placeholder_drone.svg" alt="Detection ML pipeline souterrain par drone">
+            <div class="project-tag" data-i18n="proj5_tag">COMPUTER VISION · MACHINE LEARNING · PYTHON</div>
           </div>
-          <div class="project-tag" data-i18n="proj5_tag">COMPUTER VISION · MACHINE LEARNING · PYTHON</div>
-          <h3 class="project-title" data-i18n="proj5_title">Detection ML sur donnees drone - pipeline souterrain</h3>
-          <p class="project-text" data-i18n="proj5_text">
-            Classification d'images multi-canaux acquises par drone pour la detection automatique de pipelines souterrains. Pipeline de pretraitement complet, KNN optimise par GridSearchCV et validation croisee 10 folds.
-          </p>
-          <ul class="project-meta">
-            <li data-i18n="proj5_meta1">Python · scikit-learn</li>
-            <li data-i18n="proj5_meta2">F1-score : 99,96% en cross-validation</li>
-          </ul>
-          <div class="project-actions">
-            <a href="https://github.com/reubenmag/D-tection-de-fourreau"
-               target="_blank"
-               class="btn-link"
-               data-i18n="proj5_link">
-              Voir le projet →
-            </a>
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj5_title">Detection ML sur donnees drone - pipeline souterrain</h3>
+            <p class="project-text" data-i18n="proj5_text">Classification d'images multi-canaux acquises par drone pour la detection automatique de pipelines souterrains. Pipeline de pretraitement complet, KNN optimise par GridSearchCV et validation croisee 10 folds.</p>
+            <ul class="project-meta">
+              <li data-i18n="proj5_meta1">Python · scikit-learn</li>
+              <li data-i18n="proj5_meta2">F1-score : 99,96% en cross-validation</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/reubenmag/D-tection-de-fourreau" target="_blank" class="btn-link" data-i18n="proj5_link">Voir le projet →</a>
+            </div>
           </div>
         </article>
 
-        <!-- Projet 6 -->
-        <article class="project-card">
+        <article class="project-card reveal reveal-d2">
           <div class="project-cover">
             <img src="src/placeholder_medical.svg" alt="Classification images medicales paludisme CNN">
+            <div class="project-tag" data-i18n="proj6_tag">DEEP LEARNING · COMPUTER VISION · PYTHON</div>
           </div>
-          <div class="project-tag" data-i18n="proj6_tag">DEEP LEARNING · COMPUTER VISION · PYTHON</div>
-          <h3 class="project-title" data-i18n="proj6_title">Classification d'images medicales - detection du paludisme</h3>
-          <p class="project-text" data-i18n="proj6_text">
-            Classification de cellules saines et infectees pour la detection du paludisme via un reseau de neurones convolutif (CNN). Architecture modulaire avec augmentation de donnees pour ameliorer la generalisation.
-          </p>
-          <ul class="project-meta">
-            <li data-i18n="proj6_meta1">Python · PyTorch · Keras (TensorFlow)</li>
-            <li data-i18n="proj6_meta2">CNN · Augmentation de donnees</li>
-          </ul>
-          <div class="project-actions">
-            <a href="https://github.com/reubenmag/Malaria_Projet"
-               target="_blank"
-               class="btn-link"
-               data-i18n="proj6_link">
-              Voir le projet →
-            </a>
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj6_title">Classification d'images medicales - detection du paludisme</h3>
+            <p class="project-text" data-i18n="proj6_text">Classification de cellules saines et infectees pour la detection du paludisme via un reseau de neurones convolutif (CNN). Architecture modulaire avec augmentation de donnees pour ameliorer la generalisation.</p>
+            <ul class="project-meta">
+              <li data-i18n="proj6_meta1">Python · PyTorch · Keras (TensorFlow)</li>
+              <li data-i18n="proj6_meta2">CNN · Augmentation de donnees</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/reubenmag/Malaria_Projet" target="_blank" class="btn-link" data-i18n="proj6_link">Voir le projet →</a>
+            </div>
           </div>
         </article>
 
@@ -446,44 +347,30 @@
 
     <!-- CONTACT -->
     <section id="contact" class="section">
-      <div class="section-header">
+      <div class="section-header reveal">
         <p class="section-kicker" data-i18n="contact_kicker">// Me contacter</p>
-        <h2 class="section-title" data-i18n="contact_title">On discute d’un projet ?</h2>
-        <p class="section-text" data-i18n="contact_text">
-          Je suis à l’écoute d’opportunités d’alternance ou de stage alterné en data
-          (Data Analyst, Data Scientist ou un rôle hybride entre les deux).
-          N’hésite pas à me contacter pour en parler.
-        </p>
+        <h2 class="section-title" data-i18n="contact_title">On discute d'un projet ?</h2>
+        <p class="section-text" data-i18n="contact_text">Je suis à l'écoute d'opportunités d'alternance ou de stage alterné en data (Data Analyst, Data Scientist ou un rôle hybride entre les deux). N'hésite pas à me contacter pour en parler.</p>
       </div>
 
-      <div class="contact-grid">
+      <div class="contact-grid reveal">
         <div class="contact-info">
           <h3 data-i18n="contact_info_title">Infos</h3>
           <ul>
-            <li data-i18n="contact_label_email">
-              <strong>Email :</strong>
-              <a href="mailto:ton.email@example.com">reubenmag6@gmail.com</a>
-            </li>
-            <li data-i18n="contact_label_phone">
-              <strong>Téléphone :</strong> +33 615409515
-            </li>
-            <li data-i18n="contact_label_linkedin">
-              <strong>LinkedIn :</strong>
-              <a href="https://www.linkedin.com/in/magnus-sinhou-6179b02b1/" target="_blank">Profil</a>
-            </li>
+            <li data-i18n="contact_label_email"><strong>Email :</strong> <a href="mailto:reubenmag6@gmail.com">reubenmag6@gmail.com</a></li>
+            <li data-i18n="contact_label_phone"><strong>Téléphone :</strong> +33 615409515</li>
+            <li data-i18n="contact_label_linkedin"><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/magnus-sinhou-6179b02b1/" target="_blank">Profil</a></li>
           </ul>
         </div>
 
-        <form class="contact-form" action="mailto:ton.email@example.com" method="post" enctype="text/plain">
+        <form class="contact-form" action="mailto:reubenmag6@gmail.com" method="post" enctype="text/plain">
           <div class="form-row">
-            <input type="text" name="name" data-i18n-placeholder="contact_form_name" placeholder="Votre nom" required />
-            <input type="email" name="email" data-i18n-placeholder="contact_form_email" placeholder="Votre email" required />
+            <input type="text"  name="name"    data-i18n-placeholder="contact_form_name"    placeholder="Votre nom" required />
+            <input type="email" name="email"   data-i18n-placeholder="contact_form_email"   placeholder="Votre email" required />
           </div>
-          <input type="text" name="subject" data-i18n-placeholder="contact_form_subject" placeholder="Objet du message" required />
-          <textarea name="message" rows="5" data-i18n-placeholder="contact_form_message" placeholder="Votre message" required></textarea>
-          <button type="submit" class="btn btn-primary full-width" data-i18n="contact_form_button">
-            Envoyer
-          </button>
+          <input    type="text" name="subject"  data-i18n-placeholder="contact_form_subject" placeholder="Objet du message" required />
+          <textarea name="message" rows="5"     data-i18n-placeholder="contact_form_message" placeholder="Votre message" required></textarea>
+          <button type="submit" class="btn btn-primary full-width" data-i18n="contact_form_button">Envoyer</button>
         </form>
       </div>
     </section>
