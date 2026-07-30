@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+  <rect width="600" height="200" fill="#090f25"/>
+  <!-- Grid lines -->
+  <line x1="0" y1="50" x2="600" y2="50" stroke="rgba(148,163,184,0.08)" stroke-width="1"/>
+  <line x1="0" y1="100" x2="600" y2="100" stroke="rgba(148,163,184,0.08)" stroke-width="1"/>
+  <line x1="0" y1="150" x2="600" y2="150" stroke="rgba(148,163,184,0.08)" stroke-width="1"/>
+  <!-- Normal bars -->
+  <rect x="40"  y="110" width="36" height="70" rx="4" fill="rgba(0,246,255,0.25)"/>
+  <rect x="90"  y="90"  width="36" height="90" rx="4" fill="rgba(0,246,255,0.28)"/>
+  <rect x="140" y="100" width="36" height="80" rx="4" fill="rgba(0,246,255,0.25)"/>
+  <rect x="190" y="115" width="36" height="65" rx="4" fill="rgba(0,246,255,0.22)"/>
+  <!-- Anomaly bar -->
+  <rect x="240" y="28"  width="36" height="152" rx="4" fill="rgba(0,246,255,0.85)"/>
+  <rect x="240" y="28"  width="36" height="152" rx="4" fill="none" stroke="#00f6ff" stroke-width="1.5"/>
+  <!-- Anomaly marker -->
+  <circle cx="258" cy="20" r="7" fill="#ff4b4b"/>
+  <text x="258" y="24" font-family="monospace" font-size="9" fill="white" text-anchor="middle">!</text>
+  <!-- More normal bars -->
+  <rect x="290" y="95"  width="36" height="85" rx="4" fill="rgba(0,246,255,0.25)"/>
+  <rect x="340" y="105" width="36" height="75" rx="4" fill="rgba(0,246,255,0.22)"/>
+  <rect x="390" y="90"  width="36" height="90" rx="4" fill="rgba(0,246,255,0.28)"/>
+  <rect x="440" y="115" width="36" height="65" rx="4" fill="rgba(0,246,255,0.22)"/>
+  <rect x="490" y="100" width="36" height="80" rx="4" fill="rgba(0,246,255,0.25)"/>
+  <rect x="540" y="110" width="36" height="70" rx="4" fill="rgba(0,246,255,0.2)"/>
+  <!-- Trend line -->
+  <polyline points="58,118 108,102 158,108 208,120 258,48 308,106 358,112 408,102 458,118 508,108 558,116" fill="none" stroke="rgba(59,228,198,0.5)" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <!-- Label -->
+  <text x="300" y="192" font-family="monospace" font-size="11" fill="rgba(0,246,255,0.45)" text-anchor="middle" letter-spacing="2">FORENSIC · ANOMALY DETECTION · BANKING DATA</text>
+</svg>

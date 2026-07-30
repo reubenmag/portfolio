@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+  <rect width="600" height="200" fill="#090f25"/>
+  <!-- Healthy cells - group 1 -->
+  <circle cx="70"  cy="70"  r="28" fill="rgba(59,228,198,0.1)" stroke="rgba(59,228,198,0.45)" stroke-width="1.5"/>
+  <circle cx="70"  cy="70"  r="12" fill="rgba(59,228,198,0.08)" stroke="rgba(59,228,198,0.25)" stroke-width="1"/>
+  <circle cx="140" cy="50"  r="24" fill="rgba(59,228,198,0.1)" stroke="rgba(59,228,198,0.45)" stroke-width="1.5"/>
+  <circle cx="140" cy="50"  r="10" fill="rgba(59,228,198,0.08)" stroke="rgba(59,228,198,0.25)" stroke-width="1"/>
+  <circle cx="60"  cy="140" r="26" fill="rgba(59,228,198,0.1)" stroke="rgba(59,228,198,0.45)" stroke-width="1.5"/>
+  <circle cx="60"  cy="140" r="11" fill="rgba(59,228,198,0.08)" stroke="rgba(59,228,198,0.25)" stroke-width="1"/>
+  <circle cx="150" cy="155" r="22" fill="rgba(59,228,198,0.1)" stroke="rgba(59,228,198,0.45)" stroke-width="1.5"/>
+  <circle cx="150" cy="155" r="9"  fill="rgba(59,228,198,0.08)" stroke="rgba(59,228,198,0.25)" stroke-width="1"/>
+  <!-- Infected cell (center) -->
+  <circle cx="300" cy="96" r="36" fill="rgba(255,75,75,0.12)" stroke="rgba(255,75,75,0.75)" stroke-width="2"/>
+  <circle cx="300" cy="96" r="16" fill="rgba(255,75,75,0.15)" stroke="rgba(255,75,75,0.5)" stroke-width="1.5"/>
+  <!-- Parasite markers inside infected cell -->
+  <circle cx="291" cy="88"  r="5" fill="rgba(255,75,75,0.85)"/>
+  <circle cx="310" cy="100" r="4" fill="rgba(255,75,75,0.7)"/>
+  <circle cx="295" cy="106" r="3" fill="rgba(255,75,75,0.6)"/>
+  <!-- Detection label -->
+  <rect x="342" y="78" width="96" height="22" rx="4" fill="rgba(255,75,75,0.12)" stroke="rgba(255,75,75,0.45)" stroke-width="1"/>
+  <text x="390" y="93" font-family="monospace" font-size="10" fill="rgba(255,120,120,0.9)" text-anchor="middle">INFECTÉE</text>
+  <!-- Healthy cells - group 2 -->
+  <circle cx="450" cy="60"  r="26" fill="rgba(59,228,198,0.1)" stroke="rgba(59,228,198,0.45)" stroke-width="1.5"/>
+  <circle cx="450" cy="60"  r="11" fill="rgba(59,228,198,0.08)" stroke="rgba(59,228,198,0.25)" stroke-width="1"/>
+  <circle cx="530" cy="80"  r="24" fill="rgba(59,228,198,0.1)" stroke="rgba(59,228,198,0.45)" stroke-width="1.5"/>
+  <circle cx="530" cy="80"  r="10" fill="rgba(59,228,198,0.08)" stroke="rgba(59,228,198,0.25)" stroke-width="1"/>
+  <circle cx="460" cy="145" r="28" fill="rgba(59,228,198,0.1)" stroke="rgba(59,228,198,0.45)" stroke-width="1.5"/>
+  <circle cx="460" cy="145" r="12" fill="rgba(59,228,198,0.08)" stroke="rgba(59,228,198,0.25)" stroke-width="1"/>
+  <circle cx="550" cy="148" r="22" fill="rgba(59,228,198,0.1)" stroke="rgba(59,228,198,0.45)" stroke-width="1.5"/>
+  <!-- Label -->
+  <text x="300" y="192" font-family="monospace" font-size="11" fill="rgba(0,246,255,0.45)" text-anchor="middle" letter-spacing="2">DEEP LEARNING · CNN · MALARIA DETECTION</text>
+</svg>

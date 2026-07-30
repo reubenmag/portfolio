@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "Je conçois des analyses de données, des modèles de machine learning et des APIs pour transformer l’information brute en insights actionnables. J’aime autant explorer et visualiser les données que mettre en production des modèles et les suivre dans le temps.",
       hero_btn_projects: "Voir mes projets",
       hero_btn_contact: "Me contacter",
+      hero_btn_cv_analyst: "↓ CV Data Analyst",
+      hero_btn_cv_scientist: "↓ CV Data Scientist",
       hero_meta_location: "Basé en : <strong>Île-de-France</strong>",
       hero_meta_availability:
         "À la recherche d’une <strong>alternance ou d’un stage alterné</strong> en data.",
@@ -93,6 +95,30 @@ document.addEventListener("DOMContentLoaded", () => {
       proj3_meta2: "Text-to-Speech · Streamlit",
       proj3_link: "Voir le projet →",
 
+      proj4_tag: "Data Science · Machine Learning · Python",
+      proj4_title: "Analyse forensique financiere - detection de fraude",
+      proj4_text:
+        "Investigation de donnees bancaires pour identifier des virements offshore frauduleux et des comportements anormaux sur 2 500 transactions et 1 000 documents. Tests statistiques inferentiels, ML supervise et non supervise, et extraction d'informations via API LLM.",
+      proj4_meta1: "Python · scikit-learn · pandas · NumPy · API Anthropic",
+      proj4_meta2: "Random Forest · PCA · K-Means · KNN · Shapiro-Wilk · ANOVA",
+      proj4_link: "Voir le projet →",
+
+      proj5_tag: "Computer Vision · Machine Learning · Python",
+      proj5_title: "Detection ML sur donnees drone - pipeline souterrain",
+      proj5_text:
+        "Classification d'images multi-canaux acquises par drone pour la detection automatique de pipelines souterrains. Pipeline de pretraitement complet, KNN optimise par GridSearchCV et validation croisee 10 folds.",
+      proj5_meta1: "Python · scikit-learn",
+      proj5_meta2: "F1-score : 99,96% en cross-validation",
+      proj5_link: "Voir le projet →",
+
+      proj6_tag: "Deep Learning · Computer Vision · Python",
+      proj6_title: "Classification d'images medicales - detection du paludisme",
+      proj6_text:
+        "Classification de cellules saines et infectees pour la detection du paludisme via un reseau de neurones convolutif (CNN). Architecture modulaire avec augmentation de donnees pour ameliorer la generalisation.",
+      proj6_meta1: "Python · PyTorch · Keras (TensorFlow)",
+      proj6_meta2: "CNN · Augmentation de donnees",
+      proj6_link: "Voir le projet →",
+
       contact_kicker: "// Me contacter",
       contact_title: "On discute d’un projet ?",
       contact_text:
@@ -129,6 +155,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "I work on data analysis, machine learning models and APIs to turn raw information into actionable insights. I enjoy both exploring and visualizing data and deploying models in production with proper monitoring.",
       hero_btn_projects: "View my projects",
       hero_btn_contact: "Contact me",
+      hero_btn_cv_analyst: "↓ CV Data Analyst",
+      hero_btn_cv_scientist: "↓ CV Data Scientist",
       hero_meta_location: "Based in: <strong>Île-de-France</strong>",
       hero_meta_availability:
         "Looking for a <strong>work-study position or alternating internship</strong> in data.",
@@ -205,6 +233,30 @@ document.addEventListener("DOMContentLoaded", () => {
       proj3_meta1: "Python · LLM (Groq) · Whisper",
       proj3_meta2: "Text-to-Speech · Streamlit",
       proj3_link: "View the project →",
+
+      proj4_tag: "Data Science · Machine Learning · Python",
+      proj4_title: "Financial Forensic Analysis - Fraud Detection",
+      proj4_text:
+        "Investigation of banking data to identify fraudulent offshore transfers and abnormal behaviors across 2,500 transactions and 1,000 documents. Inferential statistical tests, supervised and unsupervised ML, and information extraction via LLM API.",
+      proj4_meta1: "Python · scikit-learn · pandas · NumPy · Anthropic API",
+      proj4_meta2: "Random Forest · PCA · K-Means · KNN · Shapiro-Wilk · ANOVA",
+      proj4_link: "View the project →",
+
+      proj5_tag: "Computer Vision · Machine Learning · Python",
+      proj5_title: "ML Detection on Drone Data - Underground Pipeline",
+      proj5_text:
+        "Multi-channel image classification from drone-acquired data for automatic underground pipeline detection. Full preprocessing pipeline, KNN optimized with GridSearchCV and 10-fold cross-validation.",
+      proj5_meta1: "Python · scikit-learn",
+      proj5_meta2: "F1-score: 99.96% in cross-validation",
+      proj5_link: "View the project →",
+
+      proj6_tag: "Deep Learning · Computer Vision · Python",
+      proj6_title: "Medical Image Classification - Malaria Detection",
+      proj6_text:
+        "Classification of healthy and infected cells for malaria detection using a convolutional neural network (CNN). Modular architecture with data augmentation to improve generalization.",
+      proj6_meta1: "Python · PyTorch · Keras (TensorFlow)",
+      proj6_meta2: "CNN · Data Augmentation",
+      proj6_link: "View the project →",
 
       contact_kicker: "// Contact",
       contact_title: "Let’s talk about a project",

@@ -1,0 +1,6 @@
+Deposer les fichiers PDF dans ce dossier avec les noms suivants :
+
+  CV-Sinhou-Magnus-Data-Analyst.pdf
+  CV-Sinhou-Magnus-Data-Scientist.pdf
+
+Les boutons de telechargement sur le site pointent deja vers ces chemins.
