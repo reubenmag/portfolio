@@ -459,9 +459,14 @@ body.dark .btn-primary:hover { background: #2563EB; }
   box-shadow: var(--shadow-md);
   overflow: hidden;
   display: flex; flex-direction: column;
-  transform-style: preserve-3d;
-  will-change: transform;
   transition: box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+@media (hover: hover) {
+  .project-card {
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
 }
 .project-card:hover {
   box-shadow: var(--shadow-accent);
@@ -587,6 +592,19 @@ body:not(.dark) .project-cover::after {
   border-top: 1px solid var(--border);
 }
 
+/* === REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 /* === RESPONSIVE === */
 @media (max-width: 960px) {
   .hero {
@@ -623,6 +641,7 @@ body:not(.dark) .project-cover::after {
   .form-row { grid-template-columns: 1fr; }
 
   .hero-photo-ring { width: 220px; height: 220px; }
-  .hero-badge-top  { right: -10px; }
-  .hero-badge-bottom { left: -10px; }
+  .hero-badge { font-size: 11px; padding: 8px 12px; }
+  .hero-badge-top    { top: 0;    right: 0; }
+  .hero-badge-bottom { bottom: 0; left: 0; }
 }
